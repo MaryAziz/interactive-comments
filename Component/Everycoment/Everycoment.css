@@ -1,0 +1,123 @@
+.commentbody{
+    width: 730px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user{
+    width: 90%;
+    height: 100%px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.pic{
+    width: 30px;
+    height: 30px;
+}
+.reply{
+    width: 65px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+    margin-left: auto;
+}
+.reply:hover{
+    color:hsl(239, 57%, 85%) ;
+    cursor: pointer;
+}
+p{
+    width: 530;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    color: hsl(211, 10%, 45%);
+}
+.name{
+    color: hsl(212, 24%, 26%);
+    font-weight: 600;
+}
+.time{
+    
+    font-size: 12px;
+    color: hsl(211, 10%, 45%);
+}
+.del,.edit{
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+.del{
+    color: brown;
+}
+.edit{
+    color: blue;
+}
+#margin{
+    margin-left: auto;
+    display: flex;
+}
+#editarea{
+    width: 60%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+#edittext{
+    width: 70%;
+    height: 100%;
+    border: solid,1px,gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#saveedite{
+    width: 80px;
+    height: 25px;
+}
+@media screen and (max-width: 375px) {
+
+    .commentbody{
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .time{
+        width: 110px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .reply{
+        position: relative;
+        top: 90px;
+    }
+    .user{
+        height: 70px;
+    }    
+}
